@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+
+  var xmlHttp = new XMLHttpRequest();       // XMLHttpRequest 객체를 생성함.
+  xmlHttp.onreadystatechange = function() { // onreadystatechange 이벤트 핸들러를 작성함.
+    console.log(arguments);
+  };
+  xmlHttp.open("GET", "http://10.20.141.55:8084/", true);
+  xmlHttp.send();
+
+  var xmlHttp2 = new XMLHttpRequest();       // XMLHttpRequest 객체를 생성함.
+  xmlHttp2.onreadystatechange = function() { // onreadystatechange 이벤트 핸들러를 작성함.
+    console.log(arguments);
+  };
+  xmlHttp2.open("GET", "http://127.0.0.1:8080/", true);
+  xmlHttp2.send();
+
+
+</script>
+</body>
+</html>
