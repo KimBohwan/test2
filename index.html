@@ -21,6 +21,19 @@
   xmlHttp2.open("GET", "http://127.0.0.1:8080/", true);
   xmlHttp2.send();
 
+  var xmlHttp3 = new XMLHttpRequest();       // XMLHttpRequest 객체를 생성함.
+  xmlHttp3.onreadystatechange = function() { // onreadystatechange 이벤트 핸들러를 작성함.
+    console.log(arguments);
+  };
+  xmlHttp3.open("GET", "http://127.0.0.1:8080/MAXGAUGE_HWAN/", true);
+  xmlHttp3.send();
+
+  var xmlHttp4 = new XMLHttpRequest();       // XMLHttpRequest 객체를 생성함.
+  xmlHttp4.onreadystatechange = function() { // onreadystatechange 이벤트 핸들러를 작성함.
+    console.log(arguments);
+  };
+  xmlHttp4.open("GET", "http://10.20.141.45:8080/MAXGAUGE_HWAN/", true);
+  xmlHttp4.send();
 
 </script>
 </body>
